@@ -3,13 +3,13 @@ node_js:
     - 10
 install:
     - npm ci
-    - npm install -g codecov
+    - npm install codacy-coverage -g
 script:
     - npm run lint
     - npm run test
     - npm run tsc
 after_success:
-  - codecov
+  - cat ./tests_results/coverage/lcov.info | codacy-coverage
 notifications:
   email: false
 sudo: required
