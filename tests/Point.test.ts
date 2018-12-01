@@ -11,6 +11,6 @@ describe('Test Point model', () => {
         expect(point.getHeartRate()).toEqual(5);
         const point2 = point.setHeartRate(6);
         expect(point.getHeartRate()).toEqual(5);
-        expect(point2.getHeartRate()).toEqual(6);
+        expect(point2.getHeartRate()).toEqual(6 );
     });
 });
