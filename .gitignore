@@ -1,0 +1,5 @@
+node_modules
+.idea
+dev
+tests_results
+dist

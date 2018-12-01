@@ -1,0 +1,42 @@
+{
+  "name": "fitness-models",
+  "version": "0.1.0",
+  "description": "Extendable fitness models for Workout and GPS points",
+  "main": "dist/index.js",
+  "jsnext:main": "dist/index.esm.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts ./src ./tests",
+    "lint:export": "npm run lint -- -o ./tests_results/checkstyle/js-checkstyle.xml -f checkstyle",
+    "tsc": "tsc",
+    "build": "rollup --config ./rollup.config.js",
+    "test": "jest",
+    "test:build": "npm run test -- --config jest.config.build.js",
+    "test:all": "npm run lint && npm run tsc && npm run test",
+    "prepublishOnly": "npm run build && npm run tsc && npm run test:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fabulator/fitness-models.git"
+  },
+  "author": "Michal Ozogán <michal@ozogan.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/fabulator/fitness-models#readme",
+  "keywords": [
+    "fitness"
+  ],
+  "devDependencies": {
+    "@socifi/babel-config": "^0.6.0",
+    "@socifi/eslint-config": "^2.3.0",
+    "@socifi/jest-config": "^2.1.0",
+    "@socifi/rollup-config": "^2.0.1",
+    "@types/luxon": "^1.4.1",
+    "@types/mathjs": "^4.4.3"
+  },
+  "dependencies": {
+    "gpx-builder": "^2.0.1",
+    "luxon": "^1.8.1",
+    "mathjs": "^5.2.3"
+  }
+}
