@@ -33,4 +33,7 @@ action "Publish" {
   needs = ["Lint", "Typescript lint", "Test"]
   args = "run release"
   secrets = ["GITHUB_TOKEN", "NPM_TOKEN"]
+  env = {
+    CI = "true"
+  }
 }
