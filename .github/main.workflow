@@ -3,6 +3,7 @@ workflow "Fabulator NPM Workflow" {
   resolves = ["Publish"]
 }
 
+
 action "Install" {
   uses = "actions/npm@e7aaefe"
   args = "ci"
