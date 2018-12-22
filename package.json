@@ -38,7 +38,7 @@
     "@types/luxon": "^1.4.1",
     "@types/mathjs": "^4.4.4",
     "husky": "^1.2.1",
-    "semantic-release-config-fabulator": "^1.0.2"
+    "semantic-release-config-fabulator": "^1.0.3"
   },
   "dependencies": {
     "gpx-builder": "^2.0.1",
