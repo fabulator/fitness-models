@@ -8,7 +8,7 @@ import workoutGPXExporter from './workoutGPXExporter';
 export interface Constructor {
     start: DateTime,
     duration: Duration,
-    typeId: WorkoutType | string,
+    typeId: WorkoutType | string | number,
 
     points?: Array<Point>,
     distance?: Unit,
@@ -19,6 +19,7 @@ export interface Constructor {
     avgHeartRate?: number,
     maxHeartRate?: number,
     title?: string,
+    hashtags?: Array<string>,
     isRace?: boolean,
     isCommute?: boolean,
 }
@@ -28,7 +29,7 @@ export default class Workout {
 
     protected duration: Duration;
 
-    protected typeId: WorkoutType | string;
+    protected typeId: WorkoutType | string | number;
 
     protected points: Array<Point>;
 
@@ -47,6 +48,8 @@ export default class Workout {
     protected ascent?: Unit;
 
     protected descent?: Unit;
+
+    protected hashtags: Array<string>;
 
     public isRace: boolean;
 
@@ -67,6 +70,7 @@ export default class Workout {
         descent,
         isRace,
         isCommute,
+        hashtags,
     }: Constructor) {
         this.start = start;
         this.duration = duration;
@@ -80,6 +84,7 @@ export default class Workout {
         this.title = title;
         this.ascent = ascent;
         this.descent = descent;
+        this.hashtags = hashtags || [];
         this.isRace = isRace || false;
         this.isCommute = isCommute || false;
     }
@@ -107,7 +112,7 @@ export default class Workout {
     public getEnd(): DateTime {
         const points = this.getPoints();
 
-        if (points) {
+        if (points.length > 0) {
             const latPointTime = points[points.length - 1].getTime();
             if (latPointTime) {
                 return latPointTime;
@@ -165,7 +170,42 @@ export default class Workout {
         return this.descent;
     }
 
-    public setTypeId(typeId: WorkoutType | string) {
+    public getHashtags(): Array<string> {
+        return this.hashtags;
+    }
+
+    public hasHashtag(hashtag: string): boolean {
+        return this.hashtags.indexOf(hashtag) !== -1;
+    }
+
+    public setHashtags(hashtags: Array<string>) {
+        return this.clone({ hashtags });
+    }
+
+    public removeHashtag(hashtag: string) {
+        return this.removeHashtags([hashtag]);
+    }
+
+    public removeHashtags(hashtags: Array<string>) {
+        return this.clone({
+            hashtags: hashtags.filter(hashtag => hashtags.includes(hashtag)),
+        });
+    }
+
+    public addHashtags(hashtags: Array<string>) {
+        return this.clone({
+            hashtags: [
+                ...this.getHashtags(),
+                ...hashtags,
+            ],
+        });
+    }
+
+    public addHashtag(hashtag: string) {
+        return this.addHashtags([hashtag]);
+    }
+
+    public setTypeId(typeId: WorkoutType | string | number) {
         return this.clone({ typeId });
     }
 
@@ -211,6 +251,14 @@ export default class Workout {
 
     public setDescent(descent?: Unit) {
         return this.clone({ descent });
+    }
+
+    public setCommute(isCommute: boolean) {
+        return this.clone({ isCommute });
+    }
+
+    public setRace(isRace: boolean) {
+        return this.clone({ isRace });
     }
 
     public toObject(): Constructor {
