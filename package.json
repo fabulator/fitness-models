@@ -43,6 +43,6 @@
   "dependencies": {
     "gpx-builder": "^2.0.1",
     "luxon": "^1.10.0",
-    "mathjs": "^5.4.0"
+    "mathjs": "^5.4.1"
   }
 }
