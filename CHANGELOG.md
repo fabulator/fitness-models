@@ -1,6 +1,19 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] 2019-01-15
+### Merge branch 'master' of github.com
+- fabulator/fitness-models
+
+### Fixed
+- Clonning object
+
+### Other
+- Update dependency mathjs to ^5.4.1
+- Update dependency luxon to ^1.10.0
+- Update dependency luxon to ^1.9.0
+- Update dependency husky to ^1.3.1
+
 ## [0.2.0] 2018-12-22
 ### Added
 - Hashtags to workouts
