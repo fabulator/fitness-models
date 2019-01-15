@@ -277,6 +277,7 @@ export default class Workout {
             descent: this.descent,
             isRace: this.isRace,
             isCommute: this.isCommute,
+            hashtags: this.hashtags,
         };
     }
 
