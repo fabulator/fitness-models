@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "gpx-builder": "^2.0.1",
-    "luxon": "^1.11.3",
+    "luxon": "^1.11.4",
     "mathjs": "^5.5.0"
   }
 }
