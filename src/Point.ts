@@ -11,6 +11,7 @@ export interface Constructor {
     altitude?: Unit,
     duration?: Duration,
     speed?: Unit,
+    temperature?: Unit,
 }
 
 export default class Point {
@@ -32,6 +33,8 @@ export default class Point {
 
     protected altitude?: Unit;
 
+    protected temperature?: Unit;
+
     public constructor({
         time,
         latitude,
@@ -42,6 +45,7 @@ export default class Point {
         hr,
         cadence,
         altitude,
+        temperature,
     }: Constructor) {
         this.time = time;
         this.latitude = latitude;
@@ -52,6 +56,7 @@ export default class Point {
         this.hr = hr;
         this.cadence = cadence;
         this.altitude = altitude;
+        this.temperature = temperature;
     }
 
     protected clone(extend: Partial<Constructor>): Point {
@@ -97,6 +102,10 @@ export default class Point {
         return this.duration;
     }
 
+    public getTemperature() {
+        return this.temperature;
+    }
+
     public setTime(time?: DateTime) {
         return this.clone({ time });
     }
@@ -133,6 +142,10 @@ export default class Point {
         return this.clone({ duration });
     }
 
+    public setTemperature(temperature?: Unit) {
+        return this.clone({ temperature });
+    }
+
     public toObject(): Constructor {
         return {
             time: this.time,
@@ -144,6 +157,7 @@ export default class Point {
             hr: this.hr,
             cadence: this.cadence,
             altitude: this.altitude,
+            temperature: this.temperature,
         };
     }
 }
