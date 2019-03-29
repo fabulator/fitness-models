@@ -10,7 +10,7 @@ export interface Constructor {
     duration: Duration,
     typeId: WorkoutType | string | number,
 
-    points?: Array<Point>,
+    points?: Point[],
     distance?: Unit,
     ascent?: Unit,
     descent?: Unit,
@@ -19,7 +19,7 @@ export interface Constructor {
     avgHeartRate?: number,
     maxHeartRate?: number,
     title?: string,
-    hashtags?: Array<string>,
+    hashtags?: string[],
     isRace?: boolean,
     isCommute?: boolean,
 }
@@ -31,7 +31,7 @@ export default class Workout {
 
     protected typeId: WorkoutType | string | number;
 
-    protected points: Array<Point>;
+    protected points: Point[];
 
     protected distance?: Unit;
 
@@ -49,7 +49,7 @@ export default class Workout {
 
     protected descent?: Unit;
 
-    protected hashtags: Array<string>;
+    protected hashtags: string[];
 
     public isRace: boolean;
 
@@ -170,7 +170,7 @@ export default class Workout {
         return this.descent;
     }
 
-    public getHashtags(): Array<string> {
+    public getHashtags(): string[] {
         return this.hashtags;
     }
 
@@ -178,7 +178,7 @@ export default class Workout {
         return this.hashtags.indexOf(hashtag) !== -1;
     }
 
-    public setHashtags(hashtags: Array<string>) {
+    public setHashtags(hashtags: string[]) {
         return this.clone({ hashtags });
     }
 
@@ -186,13 +186,13 @@ export default class Workout {
         return this.removeHashtags([hashtag]);
     }
 
-    public removeHashtags(hashtags: Array<string>) {
+    public removeHashtags(hashtags: string[]) {
         return this.clone({
             hashtags: hashtags.filter(hashtag => hashtags.includes(hashtag)),
         });
     }
 
-    public addHashtags(hashtags: Array<string>) {
+    public addHashtags(hashtags: string[]) {
         return this.clone({
             hashtags: [
                 ...this.getHashtags(),
@@ -221,7 +221,7 @@ export default class Workout {
         return this.clone({ distance });
     }
 
-    public setPoints(points: Array<Point>) {
+    public setPoints(points: Point[]) {
         return this.clone({ points });
     }
 
