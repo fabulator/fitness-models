@@ -1,6 +1,19 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.3.1] 2019-03-29
+### Merge remote-tracking branch 'origin/renovate/luxon-1.x'
+
+# Conflicts
+- #	package-lock.json
+
+### Fixed
+- deploying
+- tests
+
+### Other
+- Update dependency luxon to ^1.12.0
+
 ## [0.3.0] 2019-03-29
 ### Added
 - Temperature to points
