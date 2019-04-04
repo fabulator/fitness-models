@@ -22,6 +22,7 @@ function convertPoints(points: EndomondoPoint[]): Point[] {
             longitude,
             speed,
             time,
+            temperature,
         } = point;
 
         if (!latitude || !longitude) {
@@ -34,6 +35,7 @@ function convertPoints(points: EndomondoPoint[]): Point[] {
             cad: cadence,
             ele: altitude ? altitude.toNumber('m') : undefined,
             speed: speed ? speed.toNumber('m/s') : undefined,
+            atemp: temperature ? temperature.toNumber('celsius') : undefined,
         });
     }).filter(item => item !== null);
 }
