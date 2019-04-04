@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] 2019-04-04
+### Added
+- Temperature to gpx export
+
 ## [0.3.1] 2019-03-29
 ### Merge remote-tracking branch 'origin/renovate/luxon-1.x'
 
