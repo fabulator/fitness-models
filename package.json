@@ -42,7 +42,7 @@
         "@types/luxon": "^1.15.2",
         "@types/mathjs": "^6.0.2",
         "gpx-builder": "^2.0.1",
-        "luxon": "^1.19.2",
+        "luxon": "^1.19.3",
         "mathjs": "^6.2.2"
     }
 }
