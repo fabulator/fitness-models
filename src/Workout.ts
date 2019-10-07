@@ -175,7 +175,7 @@ export default class Workout {
     }
 
     public hasHashtag(hashtag: string): boolean {
-        return this.hashtags.indexOf(hashtag) !== -1;
+        return this.hashtags.includes(hashtag);
     }
 
     public setHashtags(hashtags: string[]) {
