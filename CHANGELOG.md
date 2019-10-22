@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.0] 2019-10-22
+### Changed
+- [994c8eb](https://github.com/fabulator/fitness-models/commit/994c8ebc4a1384c115891539b964a32483be9caf) Update dependencies.
+
+### Other
+- [4eb29a9](https://github.com/fabulator/fitness-models/commit/4eb29a939fe8c87621ba615eeb0e79807740dbea) Update dependency husky to ^3.0.9
+
 ## [0.4.1] 2019-10-07
 ### Other
 - Update dependency @socifi/babel-config to ^0.7.0
