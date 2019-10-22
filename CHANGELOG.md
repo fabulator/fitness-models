@@ -1,6 +1,36 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.1] 2019-10-07
+### Other
+- Update dependency @socifi/babel-config to ^0.7.0
+- Update dependency mathjs to ^6.2.3
+- Update dependency husky to ^3.0.8
+- Update dependency luxon to ^1.19.3
+- Update dependency husky to ^3.0.7
+- Update dependency mathjs to ^6.2.2
+- Update dependency luxon to ^1.19.2
+- Update dependency luxon to ^1.17.3
+- Update dependency mathjs to ^6.2.1
+- Update dependency husky to ^3.0.5
+- Update dependency @socifi/babel-config to ^0.6.2
+- Update dependency luxon to ^1.17.2
+- Update dependency husky to v3 (#43)
+- Update dependency mathjs to v6 (#42)
+- Update dependency mathjs to ^5.10.3
+- Update dependency husky to ^2.3.0
+- Update dependency @types/luxon to ^1.13.0
+- Update dependency mathjs to ^5.10.0
+- Update dependency luxon to ^1.13.2
+- Update dependency luxon to ^1.13.0
+- Update dependency husky to ^2.2.0
+- Update dependency husky to v2 (#31)
+- Update dependency mathjs to ^5.9.0
+- Update dependency @types/luxon to ^1.12.0
+
+### Fixed
+- Use include instead of indexOf 
+
 ## [0.4.0] 2019-04-04
 ### Added
 - Temperature to gpx export
