@@ -139,7 +139,7 @@ export default class Workout {
     }
 
     public hasGps(): boolean {
-        return this.points.some(point => point.getLatitude() != null && point.getLongitude() != null);
+        return this.points.some((point) => point.getLatitude() != null && point.getLongitude() != null);
     }
 
     public getCalories() {
@@ -188,7 +188,7 @@ export default class Workout {
 
     public removeHashtags(hashtags: string[]) {
         return this.clone({
-            hashtags: hashtags.filter(hashtag => hashtags.includes(hashtag)),
+            hashtags: hashtags.filter((hashtag) => hashtags.includes(hashtag)),
         });
     }
 

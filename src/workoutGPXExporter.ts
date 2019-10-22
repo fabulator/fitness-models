@@ -37,7 +37,7 @@ function convertPoints(points: EndomondoPoint[]): Point[] {
             speed: speed ? speed.toNumber('m/s') : undefined,
             atemp: temperature ? temperature.toNumber('celsius') : undefined,
         });
-    }).filter(item => item !== null);
+    }).filter((item) => item !== null);
 }
 
 export default (workout: Workout): string => {
