@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.6.0] 2019-10-24
+### Changed
+- [ccdde64](https://github.com/fabulator/fitness-models/commit/ccdde647d4fcb7cb09532bcbffd4fc42a71ec52a) Update dev dependency @socifi/rollup-config to ^2.2.2
+
 ## [0.5.0] 2019-10-22
 ### Changed
 - [994c8eb](https://github.com/fabulator/fitness-models/commit/994c8ebc4a1384c115891539b964a32483be9caf) Update dependencies.
