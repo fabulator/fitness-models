@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.7.0] 2019-10-27
+### Changed
+- [b7f9466](https://github.com/fabulator/fitness-models/commit/b7f9466e0f8d052f16c8820afe97567526721262) Update dependency gpx-builder to ^2.2.0
+
 ## [0.6.0] 2019-10-24
 ### Changed
 - [ccdde64](https://github.com/fabulator/fitness-models/commit/ccdde647d4fcb7cb09532bcbffd4fc42a71ec52a) Update dev dependency @socifi/rollup-config to ^2.2.2
