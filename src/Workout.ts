@@ -2,6 +2,7 @@ import { DateTime, Duration } from 'luxon';
 import { Unit } from 'mathjs';
 import { WorkoutType } from './workout-types';
 import SPORT_NAMES from './workout-type-names';
+import * as PRIVACY from './workout-privacy';
 import Point from './Point';
 import workoutGPXExporter from './workoutGPXExporter';
 
@@ -22,6 +23,8 @@ export interface Constructor {
     hashtags?: string[],
     isRace?: boolean,
     isCommute?: boolean,
+    privacy?: PRIVACY.Privacy,
+    mapPrivacy?: PRIVACY.Privacy,
 }
 
 export default class Workout {
@@ -55,6 +58,10 @@ export default class Workout {
 
     public isCommute: boolean;
 
+    protected privacy?: PRIVACY.Privacy;
+
+    protected mapPrivacy?: PRIVACY.Privacy;
+
     public constructor({
         start,
         duration,
@@ -71,6 +78,8 @@ export default class Workout {
         isRace,
         isCommute,
         hashtags,
+        privacy,
+        mapPrivacy,
     }: Constructor) {
         this.start = start;
         this.duration = duration;
@@ -87,7 +96,11 @@ export default class Workout {
         this.hashtags = hashtags || [];
         this.isRace = isRace || false;
         this.isCommute = isCommute || false;
+        this.privacy = privacy;
+        this.mapPrivacy = mapPrivacy;
     }
+
+    static PRIVACY = PRIVACY;
 
     protected clone(extend: Partial<Constructor>): Workout {
         return new Workout({
@@ -168,6 +181,14 @@ export default class Workout {
 
     public getDescent() {
         return this.descent;
+    }
+
+    public getPrivacy() {
+        return this.privacy;
+    }
+
+    public getMapPrimacy() {
+        return this.mapPrivacy;
     }
 
     public getHashtags(): string[] {
@@ -261,6 +282,14 @@ export default class Workout {
         return this.clone({ isRace });
     }
 
+    public setPrivacy(privacy?: PRIVACY.Privacy) {
+        return this.clone({ privacy });
+    }
+
+    public setMapPrimacy(privacy?: PRIVACY.Privacy) {
+        return this.clone({ mapPrivacy: privacy });
+    }
+
     public toObject(): Constructor {
         return {
             start: this.start,
@@ -278,6 +307,8 @@ export default class Workout {
             isRace: this.isRace,
             isCommute: this.isCommute,
             hashtags: this.hashtags,
+            privacy: this.privacy,
+            mapPrivacy: this.mapPrivacy,
         };
     }
 
