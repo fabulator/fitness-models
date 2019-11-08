@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.10.0] 2019-11-08
+### Added
+- [91995ba](https://github.com/fabulator/fitness-models/commit/91995ba2930e53e6678bc26c02130e0a9df69aee) Privacy setting to workout model.
+
 ## [0.9.0] 2019-11-06
 ### Changed
 - [3e0b6f8](https://github.com/fabulator/fitness-models/commit/3e0b6f820ed6d9a9628c5b94d698188be7fcc007) Update dependency luxon to ^1.21.1
