@@ -4,6 +4,7 @@ import { WorkoutType } from './workout-types';
 import SPORT_NAMES from './workout-type-names';
 import Point from './Point';
 import workoutGPXExporter from './workoutGPXExporter';
+import workoutTCXExporter from './workoutTCXExporter';
 
 export interface Constructor {
     start: DateTime,
@@ -283,6 +284,10 @@ export default class Workout {
 
     public toGpx(): string {
         return workoutGPXExporter(this);
+    }
+
+    public toTcx(): string {
+        return workoutTCXExporter(this);
     }
 
     public toString(): string {
