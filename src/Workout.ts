@@ -187,7 +187,7 @@ export default class Workout {
         return this.privacy;
     }
 
-    public getMapPrimacy() {
+    public getMapPrivacy() {
         return this.mapPrivacy;
     }
 
@@ -286,7 +286,7 @@ export default class Workout {
         return this.clone({ privacy });
     }
 
-    public setMapPrimacy(privacy?: PRIVACY.Privacy) {
+    public setMapPrivacy(privacy?: PRIVACY.Privacy) {
         return this.clone({ mapPrivacy: privacy });
     }
 
