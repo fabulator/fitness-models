@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.10.1] 2019-11-11
+### Fixed
+- [d006bc8](https://github.com/fabulator/fitness-models/commit/d006bc814c88a9f3c5c1789213828c42e0e1dfd6) Typo in method name
+- [d006bc8](https://github.com/fabulator/fitness-models/commit/d006bc814c88a9f3c5c1789213828c42e0e1dfd6) consts for privacy
+
 ## [0.10.0] 2019-11-08
 ### Added
 - [91995ba](https://github.com/fabulator/fitness-models/commit/91995ba2930e53e6678bc26c02130e0a9df69aee) Privacy setting to workout model.
