@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.10.2] 2019-11-11
+### Fixed
+- [35994e6](https://github.com/fabulator/fitness-models/commit/35994e62b709d828b2972b9d0a757e21e301f75f) names of private consts
+
 ## [0.10.1] 2019-11-11
 ### Fixed
 - [d006bc8](https://github.com/fabulator/fitness-models/commit/d006bc814c88a9f3c5c1789213828c42e0e1dfd6) Typo in method name
