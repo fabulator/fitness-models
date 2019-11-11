@@ -1,5 +1,5 @@
-export const PRIVATE = 2;
+export const ME = 2;
 export const FRIENDS = 1;
-export const PUBLIC = 0;
+export const EVERYONE = 0;
 
-export type Privacy = typeof PRIVATE | typeof FRIENDS | typeof PUBLIC;
+export type Privacy = typeof ME | typeof FRIENDS | typeof EVERYONE;
