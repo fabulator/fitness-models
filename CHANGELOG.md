@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.11.0] 2019-11-16
+### Changed
+- [d4d387f](https://github.com/fabulator/fitness-models/commit/d4d387f68ffe2adec438f73c97821fcaece1a366) Update dependency @types/luxon to v1.21.0
+
 ## [0.10.2] 2019-11-11
 ### Fixed
 - [35994e6](https://github.com/fabulator/fitness-models/commit/35994e62b709d828b2972b9d0a757e21e301f75f) names of private consts
