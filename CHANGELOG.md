@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.12.0] 2019-11-19
+### Changed
+- [f32fd8b](https://github.com/fabulator/fitness-models/commit/f32fd8b6ae02b807019f60ce36ab37544536b0eb) Update dependency luxon to v1.21.2
+
 ## [0.11.0] 2019-11-16
 ### Changed
 - [d4d387f](https://github.com/fabulator/fitness-models/commit/d4d387f68ffe2adec438f73c97821fcaece1a366) Update dependency @types/luxon to v1.21.0
