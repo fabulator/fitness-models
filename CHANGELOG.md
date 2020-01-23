@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.18.0] 2020-01-23
+### Changed
+- [7aa0229](https://github.com/fabulator/fitness-models/commit/7aa02298e869b6f666da7584f827b023ce3ad149) Update dependency @types/mathjs to v6.0.4
+
 ## [0.17.0] 2020-01-10
 ### Changed
 - [c3d33cf](https://github.com/fabulator/fitness-models/commit/c3d33cf79b90e2c272344d1a6747b68e53f459e8) Update dependency mathjs to v6.5.0
