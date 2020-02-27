@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.22.0] 2020-02-27
+### Changed
+- [afb7296](https://github.com/fabulator/fitness-models/commit/afb7296e8ab57c63ee25cada4a8422c37f08c093) Update dependency mathjs to v6.6.1
+- [d56202b](https://github.com/fabulator/fitness-models/commit/d56202b58d61e7f49d48bc851445a71dd7533d28) Update dev dependency @socifi/eslint-config to v2.10.2 
+
 ## [0.21.0] 2020-02-02
 ### Changed
 - [8c4f8eb](https://github.com/fabulator/fitness-models/commit/8c4f8ebcce6a5edac2ddc44194036681d1a50884) Update dependency mathjs to v6.6.0
