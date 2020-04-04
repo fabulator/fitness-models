@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.29.0] 2020-04-04
+### Changed
+- [6a4e326](https://github.com/fabulator/fitness-models/commit/6a4e326c808df8c616449b35f05dad2400420ec7) Update dependency luxon to v1.23.0
+
 ## [0.28.0] 2020-04-03
 ### Changed
 - [316d201](https://github.com/fabulator/fitness-models/commit/316d201fe566e35241443e3385c95f3a958f3a60) Update dependency @types/mathjs to v6.0.5
