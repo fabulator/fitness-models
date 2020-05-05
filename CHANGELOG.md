@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.33.0] 2020-05-05
+### Changed
+- [cb13f64](https://github.com/fabulator/fitness-models/commit/cb13f64ebdd62c9659a4b27f54b494b3eef419e3) Update dependency luxon to v1.24.1
+
 ## [0.32.0] 2020-05-02
 ### Changed
 - [2218967](https://github.com/fabulator/fitness-models/commit/2218967543dc83b348026c641f997ec37a6737f5) Update dependency gpx-builder to v2.5.0
