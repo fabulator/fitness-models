@@ -1,6 +1,6 @@
 {
     "name": "fitness-models",
-    "version": "0.34.0",
+    "version": "0.35.0",
     "description": "Extendable fitness models for Workout and GPS points",
     "main": "dist/index.js",
     "jsnext:main": "dist/index.esm.js",
