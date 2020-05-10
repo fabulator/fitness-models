@@ -42,6 +42,6 @@
         "@types/mathjs": "^6.0.2",
         "gpx-builder": "^2.2.0",
         "luxon": "^1.21.1",
-        "mathjs": "^6.2.3"
+        "mathjs": "^7.0.0"
     }
 }
