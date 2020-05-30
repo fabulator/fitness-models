@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] 2020-05-30
+### Changed
+- [335faad](https://github.com/fabulator/fitness-models/commit/335faada47457d9c24db40d706ff397bfb5575fa) Update dependency gpx-builder to v3.1.0
+
 ## [2.0.0] 2020-05-19
 ### Changed
 - [9f2d864](https://github.com/fabulator/fitness-models/commit/9f2d864ff980ee10c02208ae1de892e465b2af95) Update dependency gpx-builder to v3 BREAKING (#88)
