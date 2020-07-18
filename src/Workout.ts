@@ -1,40 +1,40 @@
 import { DateTime, Duration } from 'luxon';
 import { Unit } from 'mathjs';
-import { WorkoutType } from './workout-types';
-import SPORT_NAMES from './workout-type-names';
-import * as PRIVACY from './workout-privacy';
 import Point from './Point';
+import { Privacy } from './workout-privacy';
+import { WorkoutType } from './workout-type';
+import SPORT_NAMES from './workout-type-names';
 import workoutGPXExporter from './workoutGPXExporter';
 
-export interface Constructor {
-    start: DateTime,
-    duration: Duration,
-    typeId: WorkoutType | string | number,
+export interface Constructor<PointItem extends Point = any> {
+    ascent?: Unit;
+    avgHeartRate?: number;
+    calories?: number;
 
-    points?: Point[],
-    distance?: Unit,
-    ascent?: Unit,
-    descent?: Unit,
-    calories?: number,
-    notes?: string,
-    avgHeartRate?: number,
-    maxHeartRate?: number,
-    title?: string,
-    hashtags?: string[],
-    isRace?: boolean,
-    isCommute?: boolean,
-    privacy?: PRIVACY.Privacy,
-    mapPrivacy?: PRIVACY.Privacy,
+    descent?: Unit;
+    distance?: Unit;
+    duration: Duration;
+    hashtags?: string[];
+    isCommute?: boolean;
+    isRace?: boolean;
+    mapPrivacy?: Privacy;
+    maxHeartRate?: number;
+    notes?: string;
+    points?: PointItem[];
+    privacy?: Privacy;
+    start: DateTime;
+    title?: string;
+    typeId: WorkoutType | string | number;
 }
 
-export default class Workout {
+export default class Workout<PointItem extends Point = any> {
     protected start: DateTime;
 
     protected duration: Duration;
 
     protected typeId: WorkoutType | string | number;
 
-    protected points: Point[];
+    protected points: PointItem[];
 
     protected distance?: Unit;
 
@@ -58,9 +58,9 @@ export default class Workout {
 
     public isCommute: boolean;
 
-    protected privacy?: PRIVACY.Privacy;
+    protected privacy?: Privacy;
 
-    protected mapPrivacy?: PRIVACY.Privacy;
+    protected mapPrivacy?: Privacy;
 
     public constructor({
         start,
@@ -80,7 +80,7 @@ export default class Workout {
         hashtags,
         privacy,
         mapPrivacy,
-    }: Constructor) {
+    }: Constructor<PointItem>) {
         this.start = start;
         this.duration = duration;
         this.typeId = typeId;
@@ -100,13 +100,11 @@ export default class Workout {
         this.mapPrivacy = mapPrivacy;
     }
 
-    static PRIVACY = PRIVACY;
-
-    protected clone(extend: Partial<Constructor>): Workout {
+    protected clone(extend: Partial<Constructor<PointItem>>): this {
         return new Workout({
             ...this.toObject(),
             ...extend,
-        });
+        }) as this;
     }
 
     public getTypeId() {
@@ -114,8 +112,7 @@ export default class Workout {
     }
 
     public getTypeName(): string {
-        // @ts-ignore
-        return SPORT_NAMES[this.getTypeId()];
+        return SPORT_NAMES[this.getTypeId() as WorkoutType];
     }
 
     public getStart() {
@@ -215,10 +212,7 @@ export default class Workout {
 
     public addHashtags(hashtags: string[]) {
         return this.clone({
-            hashtags: [
-                ...this.getHashtags(),
-                ...hashtags,
-            ],
+            hashtags: [...this.getHashtags(), ...hashtags],
         });
     }
 
@@ -242,7 +236,7 @@ export default class Workout {
         return this.clone({ distance });
     }
 
-    public setPoints(points: Point[]) {
+    public setPoints(points: PointItem[]) {
         return this.clone({ points });
     }
 
@@ -282,15 +276,15 @@ export default class Workout {
         return this.clone({ isRace });
     }
 
-    public setPrivacy(privacy?: PRIVACY.Privacy) {
+    public setPrivacy(privacy?: Privacy) {
         return this.clone({ privacy });
     }
 
-    public setMapPrivacy(privacy?: PRIVACY.Privacy) {
+    public setMapPrivacy(privacy?: Privacy) {
         return this.clone({ mapPrivacy: privacy });
     }
 
-    public toObject(): Constructor {
+    public toObject(): Constructor<PointItem> {
         return {
             start: this.start,
             duration: this.duration,

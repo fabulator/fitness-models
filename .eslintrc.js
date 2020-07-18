@@ -1,5 +1,3 @@
 module.exports = {
-    extends: [
-        '@socifi',
-    ],
+    extends: ['fabulator'],
 };

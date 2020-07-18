@@ -2,16 +2,16 @@ import { DateTime, Duration } from 'luxon';
 import { Unit } from 'mathjs';
 
 export interface Constructor {
-    time?: DateTime,
-    latitude?: number,
-    longitude?: number,
-    hr?: number,
-    cadence?: number,
-    distance?: Unit,
-    altitude?: Unit,
-    duration?: Duration,
-    speed?: Unit,
-    temperature?: Unit,
+    altitude?: Unit;
+    cadence?: number;
+    distance?: Unit;
+    duration?: Duration;
+    hr?: number;
+    latitude?: number;
+    longitude?: number;
+    speed?: Unit;
+    temperature?: Unit;
+    time?: DateTime;
 }
 
 export default class Point {
@@ -35,18 +35,7 @@ export default class Point {
 
     protected temperature?: Unit;
 
-    public constructor({
-        time,
-        latitude,
-        longitude,
-        distance,
-        duration,
-        speed,
-        hr,
-        cadence,
-        altitude,
-        temperature,
-    }: Constructor) {
+    public constructor({ time, latitude, longitude, distance, duration, speed, hr, cadence, altitude, temperature }: Constructor) {
         this.time = time;
         this.latitude = latitude;
         this.longitude = longitude;
@@ -59,11 +48,11 @@ export default class Point {
         this.temperature = temperature;
     }
 
-    protected clone(extend: Partial<Constructor>): Point {
+    protected clone(extend: Partial<Constructor>): this {
         return new Point({
             ...this.toObject(),
             ...extend,
-        });
+        }) as this;
     }
 
     public getTime() {

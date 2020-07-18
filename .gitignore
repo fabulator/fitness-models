@@ -3,3 +3,4 @@ node_modules
 dev
 tests_results
 dist
+es
