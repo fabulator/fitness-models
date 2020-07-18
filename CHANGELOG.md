@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v3.0.1 (2020-07-18)
+### Fixed
+- [4b58958](https://github.com/fabulator/fitness-models/commit/4b58958755c5bdfcb96523bca61a36aecca9560c) Building typescript definitions
+
 ## v3.0.0 (2020-07-18)
 ### Refactored
 - [e6cf290](https://github.com/fabulator/fitness-models/commit/e6cf290ba289879e072c9656dfd94130b75afc43) New compiler engine, transform some types to enums BREAKING
