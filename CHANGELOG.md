@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v3.0.0 (2020-07-18)
+### Refactored
+- [e6cf290](https://github.com/fabulator/fitness-models/commit/e6cf290ba289879e072c9656dfd94130b75afc43) New compiler engine, transform some types to enums BREAKING
+
 ## [2.9.0] 2020-07-17
 ### Changed
 - [fc8a73a](https://github.com/fabulator/fitness-models/commit/fc8a73a787042f52bf00423bcb261d7565d87da5) Update dependency gpx-builder to v3.5.0
