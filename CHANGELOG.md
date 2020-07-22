@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v3.1.0 (2020-07-22)
+### Changed
+- [ed5d5d6](https://github.com/fabulator/fitness-models/commit/ed5d5d6ee6af85954ff3ede7b65a36149b948db0) Update dependency @types/luxon to v1.24.2
+- [6276874](https://github.com/fabulator/fitness-models/commit/62768740771e3be3a7c29da1fb3918b274a9ca4b) Update dev dependency eslint-config-fabulator to v1.0.2 
+
 ## v3.0.1 (2020-07-18)
 ### Fixed
 - [4b58958](https://github.com/fabulator/fitness-models/commit/4b58958755c5bdfcb96523bca61a36aecca9560c) Building typescript definitions
