@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v3.2.9 (2020-10-12)
+### Fixed
+- [2528f36](https://github.com/fabulator/fitness-models/commit/2528f3634e2717a361fa70fa0394a725d2381871) Update lock for security updated
+
 ## v3.2.8 (2020-10-05)
 ### Fixed
 - [0696b13](https://github.com/fabulator/fitness-models/commit/0696b138fd1732ee872c0deae7d2992642e35a6c) Update lock for security updated
