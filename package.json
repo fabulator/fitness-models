@@ -1,6 +1,6 @@
 {
   "name": "fitness-models",
-  "version": "3.2.20",
+  "version": "3.2.21",
   "description": "Extendable fitness models for Workout and GPS points",
   "keywords": [
     "fitness"
