@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v3.2.44 (2021-02-15)
+### Fixed
+- [ca83bec](https://github.com/fabulator/fitness-models/commit/ca83bec2dce813acc5a3f67b23c5d3aa3c05a546) Update lock for security updated
+
 ## v3.2.43 (2021-02-08)
 ### Fixed
 - [1635c55](https://github.com/fabulator/fitness-models/commit/1635c55424f453d2ff69577274c8a59ddd693eb1) Update lock for security updated
