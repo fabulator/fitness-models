@@ -32,10 +32,10 @@
   "dependencies": {
     "@babel/runtime": "^7.10.5",
     "@types/luxon": "^1.24.1",
-    "@types/mathjs": "^6.0.5",
+    "@types/mathjs": "^9.0.0",
     "gpx-builder": "^3.5.0",
     "luxon": "^1.24.1",
-    "mathjs": "^7.1.0"
+    "mathjs": "^9.0.0"
   },
   "devDependencies": {
     "babel-config-fabulator": "^1.0.0",
