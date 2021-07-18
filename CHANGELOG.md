@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.1.0 (2021-07-18)
+### Changed
+- [287876c](https://github.com/fabulator/fitness-models/commit/287876ccbd2e28459c883c3d737b413fc846743a) Update dependencies
+
 ## v4.0.3 (2021-06-14)
 ### Fixed
 - [e48f68b](https://github.com/fabulator/fitness-models/commit/e48f68b53e52cf0fbb7f97b264dfc676e55dcc49) Update lock for security updated
