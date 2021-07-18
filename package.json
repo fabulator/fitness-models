@@ -38,7 +38,7 @@
     "mathjs": "^9.4.4"
   },
   "devDependencies": {
-    "babel-config-fabulator": "^1.2.1",
+    "babel-config-fabulator": "^1.2.0",
     "commitlint-config-fabulator": "^2.0.1",
     "eslint-config-fabulator": "^1.2.2",
     "jest-config-fabulator": "^1.1.0",
