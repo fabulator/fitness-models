@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
-    "@types/luxon": "^1.27.1",
+    "@types/luxon": "^2.0.0",
     "@types/mathjs": "^9.4.1",
     "gpx-builder": "^3.7.0",
     "luxon": "^2.0.1",
