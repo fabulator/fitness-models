@@ -33,7 +33,7 @@
     "@babel/runtime": "^7.15.4",
     "@types/luxon": "^2.0.4",
     "@types/mathjs": "^9.4.1",
-    "gpx-builder": "^3.7.8",
+    "gpx-builder": "^4.0.3",
     "luxon": "^2.0.2",
     "mathjs": "^10.0.0"
   },
