@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.0.0 (2022-02-06)
+### Changed
+- [a3c4eec](https://github.com/fabulator/fitness-models/commit/a3c4eec182f5142ca159893e4595be810c2391e3) Update dependency mathjs to v10 BREAKING (#190)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v4.2.0 (2021-09-30)
 ### Changed
 - [b4a3cee](https://github.com/fabulator/fitness-models/commit/b4a3cee97ddcda2b73bbd0fe9077e4bcd3faed60) Bump dependencies
