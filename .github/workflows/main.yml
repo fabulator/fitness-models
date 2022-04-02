@@ -7,10 +7,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - name: Use Node.js 12.x
+            - name: Use Node.js 16.x
               uses: actions/setup-node@v3
               with:
-                  node-version: 12.x
+                  node-version: 16.x
             - name: NPM Build and Test
               run: |
                   npm ci
@@ -20,5 +20,3 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GHUB_BOT_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-                  DOCKER_USERNAME: fabulator
-                  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
