@@ -1,6 +1,28 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v7.0.0 (2022-08-13)
+### Changed
+- [7b2b9f0](https://github.com/fabulator/fitness-models/commit/7b2b9f06d136d2779dfcfb675c9e93803c7f1046) Update dependency luxon to v3 BREAKING (#206)
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+- [76e601b](https://github.com/fabulator/fitness-models/commit/76e601bcb3a187c13a73b92c84dc48b9938d17c0) Update dev dependency husky to v8  (#205)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [48b44c9](https://github.com/fabulator/fitness-models/commit/48b44c92a8c9c43c27ec4ab17e20435629a95dc9) Update dependency gpx-builder to v5 BREAKING (#203)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [f7dbd9c](https://github.com/fabulator/fitness-models/commit/f7dbd9c35d414f85d84d2b02d04832f3dc2535fe) Bump dev dependencies 
+- [0d59dd4](https://github.com/fabulator/fitness-models/commit/0d59dd4e1b3add369bcc45b58f7c054110e222e0) Update actions/checkout action to v3 (#197)  
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [1a98879](https://github.com/fabulator/fitness-models/commit/1a988790ac65e4213d1b81ea0f56c8d803dc3384) Update actions/setup-node action to v3 (#196)  
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [117a31f](https://github.com/fabulator/fitness-models/commit/117a31f195a17b6245ff0b292de85e732fe7c382) Update dev dependency commitlint-config-fabulator to v3  (#195)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v6.0.0 (2022-02-06)
 ### Changed
 - [907e91a](https://github.com/fabulator/fitness-models/commit/907e91aa9c3d4c87cc337a7f3c3761e1e23e08e3) Update dependency gpx-builder to v4 BREAKING (#194)
