@@ -31,10 +31,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.8",
-    "@types/luxon": "^2.3.1",
+    "@types/luxon": "^3.0.0",
     "@types/mathjs": "^9.4.1",
     "gpx-builder": "^5.0.0",
-    "luxon": "^2.3.1",
+    "luxon": "^3.0.1",
     "mathjs": "^10.4.2"
   },
   "devDependencies": {
