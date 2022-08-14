@@ -30,20 +30,19 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@babel/runtime": "^7.17.8",
+    "@babel/runtime": "^7.18.9",
     "@types/luxon": "^3.0.0",
-    "@types/mathjs": "^9.4.1",
     "gpx-builder": "^5.0.0",
     "luxon": "^3.0.1",
     "mathjs": "^11.0.1"
   },
   "devDependencies": {
     "babel-config-fabulator": "^1.4.23",
-    "commitlint-config-fabulator": "^3.0.0",
-    "eslint-config-fabulator": "^1.4.0",
+    "commitlint-config-fabulator": "^5.0.0",
+    "eslint-config-fabulator": "^1.6.0",
     "husky": "^8.0.1",
     "jest-config-fabulator": "^1.2.0",
     "rollup-config-fabulator": "^1.2.13",
-    "semantic-release-config-fabulator": "^3.3.0"
+    "semantic-release-config-fabulator": "^4.0.0"
   }
 }
