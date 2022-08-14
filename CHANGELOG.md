@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v8.1.0 (2022-08-14)
+### Changed
+- [e9c1ac0](https://github.com/fabulator/fitness-models/commit/e9c1ac038e66e2694c1f76bd7c7a69bff2718760) Bump dependencies
+
 ## v8.0.0 (2022-08-14)
 ### Changed
 - [ae4e4ce](https://github.com/fabulator/fitness-models/commit/ae4e4ce9bde12a5c704318c8d76991ba8859db44) Update dependency mathjs to v11 BREAKING (#207)
