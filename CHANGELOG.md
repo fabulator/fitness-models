@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v8.0.0 (2022-08-14)
+### Changed
+- [ae4e4ce](https://github.com/fabulator/fitness-models/commit/ae4e4ce9bde12a5c704318c8d76991ba8859db44) Update dependency mathjs to v11 BREAKING (#207)
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
 ## v7.0.0 (2022-08-13)
 ### Changed
 - [7b2b9f0](https://github.com/fabulator/fitness-models/commit/7b2b9f06d136d2779dfcfb675c9e93803c7f1046) Update dependency luxon to v3 BREAKING (#206)
