@@ -34,7 +34,7 @@
     "@types/luxon": "^3.0.0",
     "gpx-builder": "^5.0.0",
     "luxon": "^3.0.1",
-    "mathjs": "^11.0.1"
+    "mathjs": "^12.2.0"
   },
   "devDependencies": {
     "babel-config-fabulator": "^1.4.23",
